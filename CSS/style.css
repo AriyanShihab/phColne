@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* .container {
+    max-width: 1140px;
+} */
+
+.animated {
+    -webkit-animation-duration: 1000 ms;
+    animation-duration: 1000 ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+:root {
+    --mainBg: #0f0929;
+    --textColour: #f1f1f1;
+    --secondaryBg: #22174b;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    color: #e5f6f1;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.heding {
+    color: var(--textColour);
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.sm {
+    font-size: 46px;
+}
+
+.Hero {
+    position: fixed;
+    width: 100%;
+    scroll-padding-top: 200px;
+    background: var(--mainBg);
+    z-index: 999;
+    padding: 12px 0px;
+}
+
+.Hero,
+.banner,
+body {
+    background: var(--mainBg);
+}
+
+.banner {
+    min-height: 100vh;
+    height: auto !important;
+    display: block;
+    align-items: center;
+    overflow: hidden !important;
+}
+
+.forCircle {
+    position: relative;
+    z-index: 1;
+}
+
+.forCircle::after,
+.job::after,
+.circle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 232px;
+    width: 232px;
+    border-radius: 50%;
+    background-color: #ff00aa;
+    opacity: 0.5;
+    filter: blur(115px);
+    z-index: -1;
+}
+
+.forCircle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 232px;
+    width: 232px;
+    border-radius: 50%;
+    background-color: var(--secondaryBg);
+    opacity: 0.5;
+    filter: blur(115px);
+    z-index: -3;
+}
+
+.wrapper {
+    margin-top: 200px;
+}
+
+.banner .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.bnnerDiscription {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: var(--textColour);
+    margin-bottom: 50px;
+}
+
+.Rightimg {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+}
+
+.top {
+    left: 80px;
+    bottom: 50px;
+}
+
+.js {
+    bottom: 0;
+}
+
+.react {
+    top: 0;
+    left: 20px;
+}
+
+.banner .wrapper .bannerImage {
+    max-width: 80%;
+}
+
+.CCnav li {
+    margin: 0px 20px;
+}
+
+.CCnav li a {
+    color: var(--textColour) !important;
+}
+
+.CCgreadiant {
+    background: -webkit-linear-gradient(45deg, #4289ff, #16ffbe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.CCbtn {
+    color: var(--textColour);
+    background: linear-gradient(1.09deg, #6e1fea -11.78%, #4289ff 198.26%);
+    box-shadow: 0px 4px 10px rgb(31 13 69 / 15%);
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 18px 25px;
+    border-bottom: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.rating {
+    margin-bottom: 50px;
+}
+
+.RatingWrpper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #211548;
+    border-radius: 30px;
+}
+
+.RatingWrpper .card {
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.RatingWrpper .card img {
+    width: 40%;
+    margin: auto;
+}
+
+.caardext {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    color: var(--textColour);
+    margin-top: 20px;
+}
+
+
+/* best app */
+
+.bestApp {
+    position: relative;
+    z-index: 1;
+    margin-top: 120px;
+}
+
+.bestApp::after {
+    content: "";
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: 0;
+    left: 0;
+    background: url("../assets/images/dot-shape.png");
+    background-size: contain;
+    z-index: -1;
+}
+
+.textHoolder h2 {
+    color: var(--textColour);
+    font-size: 62px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.textHoolder h2 span {
+    color: #fcb640;
+    display: block;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+
+.buttonHolder img {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* reward */
+
+.reward {
+    margin: 40px 0;
+}
+
+.left {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.smartphone {
+    position: relative;
+    bottom: -44px;
+}
+
+.left img:nth-child(1) {
+    width: 40%;
+    margin: auto;
+}
+
+.rewardWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "l lt" "l lb";
+    gap: 20px;
+}
+
+.left,
+.rightTop {
+    background: #1f1248;
+    padding: 15px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+}
+
+.left {
+    grid-area: l;
+}
+
+.rightTop {
+    grid-area: lt;
+}
+
+.rightTop h2 {
+    font-size: 38px;
+    color: var(--textColour);
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.leftBottom {
+    background: linear-gradient(180deg, #ff3e6c 0%, #fc5e51 100%);
+    border-radius: 30px;
+    padding: 20px;
+    padding-bottom: 0;
+    grid-area: lb;
+}
+
+.leftBottom .top img {
+    height: 100px;
+    width: 100px !important;
+    object-fit: cover;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.top {
+    display: flex;
+}
+
+
+/* guide */
+
+.giude {
+    text-align: center;
+    margin: 200px 0px;
+    min-height: 270px;
+}
+
+.topHeadding h1 {
+    font-weight: 700;
+    font-size: 62px;
+    color: var(--textColour);
+}
+
+.red {
+    color: #fc535a;
+}
+
+
+/* coompie */
+
+.CompliteWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #211548;
+}
+
+.C-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.infoHolder {
+    display: flex;
+    gap: 10px;
+}
+
+.infoHolder p span {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btnHolder {
+    display: grid;
+    justify-content: space-between;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.butn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 5px;
+    background-color: var(--textColour);
+    border-radius: 20px;
+}
+
+.butn p {
+    color: #000;
+    margin-bottom: 0;
+}
+
+.butn img {
+    height: 30px;
+    width: 30px;
+}
+
+
+/* live */
+
+.liveWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 100px 0;
+}
+
+.liveWrapper span {
+    color: #aa9bfc;
+}
+
+.liveLeft {
+    background: linear-gradient(156.49deg, #5f5fff 1.87%, #5222d0 84.84%);
+    padding: 35px;
+    padding-left: 40px;
+    padding-right: 18px;
+    border-radius: 20px;
+}
+
+.liveRight {
+    background: linear-gradient(148.48deg, #ffcc3e -11.85%, #f79c41 81%);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.liveRight h3 {
+    color: #3e1010;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.liveRight p {
+    color: #3e1010;
+}
+
+.sswrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+/* find */
+
+.findHead {
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.findWrpper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas: "l1 r1" "l2 r1";
+}
+
+.left1 {
+    grid-area: l1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left2 {
+    grid-area: l2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right1 {
+    grid-area: r1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.left1,
+.left2,
+.right1,
+.num {
+    background: var(--secondaryBg);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.counter {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.job {
+    margin: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.jobWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    grid-template-areas: "";
+}
+
+.wraapp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.num {
+    padding: 30px 20px;
+}
+
+.mid {
+    max-height: 50%;
+    align-self: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+
+.footer {
+    padding-top: 50px;
+    border-top: 1px solid rgb(155, 255, 255);
+}
+
+.footer img {
+    margin-left: 2.3rem;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 10px 5px;
+}
+
+.footer ul li i {
+    margin-right: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: var(--textColour);
+}
+
+.ml {
+    margin-left: 2.3rem;
+}
+
+.ml i {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.ml i:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+/* banner breck point 766px */
+
+@media only screen and (max-width: 766px) {
+    section {
+        overflow-x: hidden;
+    }
+    .banner .wrapper {
+        grid-template-columns: 1fr;
+    }
+    .heding {
+        color: var(--textColour);
+        font-size: 46px;
+        font-weight: 700;
+    }
+    .sm {
+        font-size: 36px;
+    }
+    .Rightimg {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .bottom {
+        position: absolute;
+        right: 40px;
+        max-width: 30%;
+    }
+    .top {
+        left: 30px;
+        bottom: 50px;
+    }
+    .RatingWrpper {
+        grid-template-columns: 1fr;
+    }
+    .RatingWrpper .card img {
+        width: 20%;
+        margin: auto;
+    }
+    .caardext {
+        font-size: 20px;
+    }
+    .textHoolder h2 {
+        font-size: 35px;
+    }
+    .rewardWrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "l" "lt" "lb";
+        margin-top: 300px;
+    }
+    .topHeadding h1 {
+        font-size: 35px;
+    }
+    .CompliteWrapper {
+        grid-template-columns: 1fr;
+    }
+    .C-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .btnHolder {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .butn p {
+        font-size: 12px;
+    }
+    .ov span {
+        display: inline-block;
+    }
+    .liveWrapper {
+        grid-template-columns: 1fr;
+    }
+    .findHead {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .findWrpper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "l1" "l2" "r1";
+    }
+    .left1,
+    .left2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .jobWrapper {
+        grid-template-columns: 1fr;
+    }
+    .mid {
+        height: 100%;
+    }
+    .wraapp {
+        margin-top: 50px;
+    }
+}
